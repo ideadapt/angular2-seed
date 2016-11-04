@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="e277faa63b30be91663d6e7bb9c5a302a94c123c" datatype="html">
+        <source>
+    Github Repos
+  </source>
+        <target/>
+        <note priority="1" from="description">item about</note>
+        <note priority="1" from="meaning">Nav</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

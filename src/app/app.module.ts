@@ -13,10 +13,12 @@ import {RepoListComponent} from './github/repo-list/repo-list.component';
 import {RepoDetailComponent} from './github/repo-detail/repo-detail.component';
 import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
+import {TranslateModule} from 'ng2-translate';
+
 @NgModule({
   declarations: [AppComponent, AboutComponent, RepoBrowserComponent, RepoListComponent, RepoDetailComponent, HomeComponent],
-  imports     : [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig)],
-  providers   : [GithubService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  imports     : [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(rootRouterConfig), TranslateModule.forRoot()],
+  providers   : [GithubService, {provide: LocationStrategy, useClass: HashLocationStrategy}] ,
   bootstrap   : [AppComponent]
 })
 export class AppModule {
