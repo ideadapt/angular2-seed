@@ -7,7 +7,7 @@ var webpackConfig = {
   entry: {
     'polyfills': './src/polyfills.browser.ts',
     'vendor':    './src/vendor.browser.ts',
-    'main':       './src/main.browser.ts',
+    'main':      './src/main.browser.ts',
   },
 
   output: {
@@ -22,12 +22,13 @@ var webpackConfig = {
   module: {
     loaders: [
       // .ts files for TypeScript
+      { test: /\.scss$/, exclude: [/\.global\.scss$/], loaders: ['raw-loader', 'sass-loader'] },
+      { test: /\.global.scss$/, exclude: [/node_modules/], loaders: ['style-loader', 'css-loader', 'sass-loader'] },
       { test: /\.ts$/, loaders: ['awesome-typescript-loader', 'angular2-template-loader'] },
       { test: /\.css$/, loaders: ['to-string-loader', 'css-loader'] },
       { test: /\.html$/, loader: 'raw-loader' }
     ]
   }
-
 };
 
 
