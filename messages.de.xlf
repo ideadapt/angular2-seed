@@ -6,10 +6,11 @@
         <source>
     Github Repos
   </source>
-        <target/>
+        <target>GitHub Verzeichnis</target>
         <note priority="1" from="description">item github</note>
         <note priority="1" from="meaning">Nav</note>
       </trans-unit>
     </body>
   </file>
 </xliff>
+
